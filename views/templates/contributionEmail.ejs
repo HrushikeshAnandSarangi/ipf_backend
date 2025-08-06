@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Your Contribution - Indian Pluralism Foundation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #f97316 0%, #22c55e 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .greeting {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #d1fae5 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #f97316;
+        }
+        
+        .amount-highlight {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f97316;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f97316;
+        }
+        
+        .foundation-points {
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .foundation-points ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .foundation-points li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .foundation-points li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #22c55e;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .payment-section {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .payment-method {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .payment-method h4 {
+            color: #f97316;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .payment-method h4:before {
+            content: "💳";
+            margin-right: 8px;
+        }
+        
+        .bank-method h4:before {
+            content: "🏦";
+        }
+        
+        .payment-details {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            border-left: 3px solid #22c55e;
+        }
+        
+        .payment-details strong {
+            color: #1f2937;
+        }
+        
+        .copy-button {
+            background: linear-gradient(135deg, #f97316 0%, #22c55e 100%);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        
+        .important-note {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .important-note h4 {
+            color: #dc2626;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .steps {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .steps ol {
+            padding-left: 20px;
+        }
+        
+        .steps li {
+            margin-bottom: 8px;
+            color: #1e40af;
+        }
+        
+        .footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            margin-bottom: 20px;
+        }
+        
+        .footer h3 {
+            color: #f97316;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: #22c55e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(135deg, #f97316 0%, #22c55e 100%);
+            margin: 30px 0;
+            border-radius: 1px;
+        }
+        
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .payment-method {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://res.cloudinary.com/dk6m1qejk/image/upload/v1754441462/os_logo-only_ufhun6.png" alt="Indian Pluralism Foundation Logo" class="logo">
+            <h1>Indian Pluralism Foundation</h1>
+            <p>Building Bridges Across Communities</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <div class="greeting">
+                Hello <%= name %>,
+            </div>
+            
+            <!-- Thank You Section -->
+            <div class="thank-you-section">
+                <h3 style="color: #1f2937; text-align: center; margin-bottom: 15px;">🙏 Thank You for Your Generous Contribution!</h3>
+                <p style="text-align: center; margin-bottom: 10px;">We are deeply grateful for your support towards our interfaith initiatives.</p>
+                <div class="amount-highlight">₹<%= amount %></div>
+                <p style="text-align: center; font-style: italic; color: #6b7280;">Your contribution will help us build bridges between communities and foster interfaith harmony.</p>
+            </div>
+            
+            <!-- About Foundation -->
+            <div class="section">
+                <h3 class="section-title">About Indian Pluralism Foundation</h3>
+                <div class="foundation-points">
+                    <ul>
+                        <li><strong>Interfaith Dialogue:</strong> Promoting understanding between diverse religious communities</li>
+                        <li><strong>Youth Engagement:</strong> Empowering young leaders through interfaith programs</li>
+                        <li><strong>Community Service:</strong> Uniting faiths through charitable initiatives and social work</li>
+                        <li><strong>UN SDG Support:</strong> Contributing to Sustainable Development Goals through peacebuilding</li>
+                        <li><strong>Educational Outreach:</strong> Conducting workshops, seminars, and essay contests</li>
+                        <li><strong>Bridge Building:</strong> Creating sustainable pathways to peace and mutual respect</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- Payment Instructions -->
+            <div class="section">
+                <h3 class="section-title">Complete Your Contribution</h3>
+                <p style="margin-bottom: 20px;">To complete your contribution, please make the payment using either of the methods below and send us the payment proof as a reply to this email.</p>
+                
+                <div class="payment-section">
+                    <!-- UPI Payment -->
+                    <div class="payment-method">
+                        <h4>UPI Payment (Recommended)</h4>
+                        <div class="payment-details">
+                            <strong>UPI ID:</strong> indianpluralismfoundation@paytm<br>
+                            <strong>Amount:</strong> ₹<%= amount %><br>
+                            <strong>Reference:</strong> IPF-<%= name.replace(/\s+/g, '').toUpperCase() %>-<%= new Date().getFullYear() %>
+                        </div>
+                        <p style="font-size: 14px; color: #6b7280; margin-top: 10px;">
+                            <em>Use the UPI ID above. Please include the reference in payment description.</em>
+                        </p>
+                    </div>
+                    
+                    <!-- Bank Transfer -->
+                    <div class="payment-method bank-method">
+                        <h4>Bank Transfer</h4>
+                        <div class="payment-details">
+                            <strong>Account Name:</strong> Indian Pluralism Foundation<br>
+                            <strong>Account Number:</strong> 1234567890123456<br>
+                            <strong>IFSC Code:</strong> SBIN0001234<br>
+                            <strong>Bank:</strong> State Bank of India<br>
+                            <strong>Branch:</strong> New Delhi Main Branch<br>
+                            <strong>Amount:</strong> ₹<%= amount %>
+                        </div>
+                        <p style="font-size: 14px; color: #6b7280; margin-top: 10px;">
+                            <em>Please mention "IPF Contribution - <%= name %>" in the transfer description.</em>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Important Instructions -->
+                <div class="important-note">
+                    <h4>📋 Important Instructions</h4>
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>After making the payment, please reply to this email with the payment screenshot/receipt</li>
+                        <li>Include your full name and phone number in the reply for verification</li>
+                        <li>We will send you a confirmation and receipt within 24-48 hours</li>
+                        <li>For any queries, contact us at the details provided below</li>
+                    </ul>
+                </div>
+                
+                <!-- Next Steps -->
+                <div class="steps">
+                    <h4 style="color: #1e40af; margin-bottom: 15px;">📝 Next Steps</h4>
+                    <ol>
+                        <li>Choose your preferred payment method (UPI or Bank Transfer)</li>
+                        <li>Make the payment of ₹<%= amount %></li>
+                        <li>Take a screenshot of the payment confirmation</li>
+                        <li>Reply to this email with the payment proof</li>
+                        <li>Receive your contribution receipt and welcome to our community!</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- Impact Message -->
+            <div class="section">
+                <h3 class="section-title">Your Impact</h3>
+                <p style="background-color: #f0fdf4; padding: 20px; border-radius: 8px; border-left: 4px solid #22c55e;">
+                    Your contribution of <strong>₹<%= amount %></strong> will directly support our interfaith programs, youth leadership initiatives, and community service projects. Together, we are building a more inclusive and harmonious society where diversity is celebrated and unity is strengthened.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
